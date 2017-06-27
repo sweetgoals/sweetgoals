@@ -1,0 +1,699 @@
+﻿.actTitle{
+    font-size:x-large;
+    font-weight:bold;
+}
+
+.actDesc, .actGood, .actBad 
+{
+    display:inline-block;
+    padding:4px;
+    text-align:left;
+    width:80%;
+}
+
+.actDesc:hover,
+.actGood:hover,
+.actBad:hover{
+    background-color:#6699FF;
+    border: 2px solid black;
+}
+
+.actComments{
+    border-bottom: 1px solid black;
+    display:inline-block;
+    width:100%;
+    text-align:left;
+    padding:20px;
+}
+
+.actCommentPanel{
+    border-top: 1px solid black;
+}
+
+
+body{
+    background-color:#f5f5f5;
+    overflow-y: scroll;
+}
+
+.block-system{
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; 
+    width: 30%; 
+}
+.block{
+    background-color: white;
+    border: 1px solid rgb(230, 230, 230); 
+    padding-bottom:10px;
+    text-align: left; 
+}
+
+.block-info{
+    font-size:x-large;
+    /*height:100px;*/ 
+    margin-left:40px;
+    width:95%;
+}
+
+.block-info:focus{
+    border:2px solid #7AC0DA;
+}
+
+.block-info-off{
+    font-size:x-large;
+    margin-left:40px;
+    width:95%;
+}
+
+.block-textControl{
+    background-color: white;
+    border: 1px solid rgb(230, 230, 230); 
+    padding:10px;
+    text-align: left; 
+}
+
+.block-picture{
+    text-align: center; 
+    display:inline-block;
+    padding:30px;
+    width:80%
+}
+
+.headerControlsClassOn{
+    float:right;
+}
+
+.headerControlsClassOff{
+    display:none;
+}
+.block-visible{
+    background-color: white;
+    border: 1px solid rgb(230, 230, 230); 
+    padding-bottom:10px;
+    text-align: left; 
+    display:block;
+}
+
+.button-block{
+    background-color: white;
+    margin-bottom: 1%; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.centerDiv {
+  background-color:lightsteelblue;
+  border: 5px solid black;
+  cursor:move;
+  display:none;
+  height: 200px;
+  left: 50%;
+  margin-Top:-100px;
+  margin-Left:-250px;
+  position: absolute;
+  top: 50%;
+  width: 500px;
+  z-index:1;
+}
+
+.titleTextControl {
+  background-color:lightsteelblue;
+  border: 5px solid black;
+  border-radius:10px;
+  display:none;
+  left: 50%;
+  margin-Top:-100px;
+  margin-Left:-250px;
+  position: fixed;
+  padding:10px;
+  top: 50%;
+  width: 500px;
+  z-Index:1000;
+}
+
+.picUpload{
+    border: 1px solid #124d77;
+    border-radius: 6px;
+    background: #007dc1;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial;
+    height: 30px;
+    -moz-border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+    text-shadow: #000 1px 1px 2px;
+    vertical-align: middle;
+    -webkit-border-radius: 6px;
+}
+
+.picUpload:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+    background: -moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background: -webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background: -o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background: -ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+    background-color: #0061a7;
+}
+
+.picUpload span{
+    display: inline-block;
+    left: 0;
+    padding-top: 5px;
+    top: 0;
+    width:90px;
+}
+
+.picUpload input{
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-size: 11px;
+    font-weight: bold;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+.previousActivity{
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent; 	
+  border-right: 100px solid grey; 
+  height: 0; 
+  left: 0px;
+  margin-left:25px;
+  position: fixed;
+  top: 50%;
+  width: 0; 
+  z-Index:1000;
+}
+
+.nextsActivity{
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 100px solid grey;
+  height: 0; 
+  position: fixed;
+  margin-right:25px;
+  right: 0px;
+  top: 50%;
+  width: 0; 
+  z-Index:1000;
+}
+
+.DialogButtons{
+    background: white;
+    border: 2px solid black;
+    border-radius:10px;
+    color: #333;
+    font-size: 1.2em;
+    margin: 5px 0 6px 0;
+    padding: 5px;
+    width: 150px;
+}
+
+.DialogButtons:hover{
+    background-color:green;
+}
+
+.errorDialogClass{
+  background: #FFF;
+  border: 5px solid red;
+  border-radius:10px;
+  display: none;
+  font-size:larger;
+  height: 200px;
+  left: 50%;
+  margin-Top:-100px;
+  margin-Left:-250px;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  width: 500px;
+  z-index: 20;
+}
+
+#errorDialogText{
+    display:block;
+    padding:20px;
+    padding-bottom:0;
+}
+
+#errorDialogButton{
+    border-radius:25px;
+    border:2px solid black;
+    width:100px;
+    font-size: x-large;
+    font-weight:600;
+}
+
+#errorDialogButton:hover{
+    background-color:#19AD09;
+}
+
+.errorOn{
+
+}
+
+.link {
+    color:blue !important;
+}
+
+.picLine{
+    height:50px; 
+    margin:10px;
+    width:50px; 
+}
+
+.picLine:hover{
+    cursor:pointer;
+}
+
+.eachPic{
+    position:relative;
+    width:50px;
+    height:50px;    
+}
+
+.eachPic .picSettingDiv{
+    position: absolute;
+    width:50px;
+    height:16px;
+    background-color:black;
+    top:-26px;
+    left:-25px;
+    z-index:1;       
+    display:none;
+
+}
+
+@media screen\0 {
+    .eachPic .picSettingDiv {
+        position: absolute;
+        width: 50px;
+        height: 16px;
+        background-color: black;
+        top: 45px;
+        left: -25px;
+        z-index: 1;
+        display: none;
+    }
+}
+
+
+.sharePic{
+    position: absolute;
+    top: 0;
+    left: 17px;
+    width: 16px;
+    height: 16px;
+    display: none;
+    color: #FFF;
+    cursor:pointer;
+}
+
+.eachPic:hover .picSettingDiv{
+    display:block;   
+}
+
+.eachPic:hover .sharePic{
+    display: block;
+    background: rgba(0, 0, 0, .6);
+}
+
+#screen{
+    position:absolute;
+    left:0;
+    top:0;
+    background:black;
+
+}
+
+.closeImg{
+    position:relative;
+    top:-10px;
+    left:10px;
+    float:right;
+}
+
+.closeImg:hover{
+    cursor: pointer;
+    float:right;
+}
+
+.commentBlock{
+    background-color: white;
+    border: 1px solid rgb(230, 230, 230); 
+    margin-right: auto; 
+    margin-left: 17.2%; 
+    padding-bottom:10px;    
+    width:72%;
+}
+.commentPanel{
+    border:2px solid black;
+    background-color:#8DA5ED;
+}
+
+.commentItem{
+    font-size:x-large;
+}
+
+.commentButtonClass{
+    border:2px solid black;
+    border-radius:25px;
+    font-weight:bolder;
+    margin-left:85%;
+    width:75px;
+
+}
+.commentButtonClass:hover{
+    background-color:green;
+}
+
+.commentInsertClass{
+    width:100%;
+}
+
+.commentGroup{
+    margin-bottom:100px !important;
+}
+
+.controlSection{
+    width: 80%; 
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom:100px;
+    background-color: white;
+}
+.dateComment{
+    font-size:medium;
+    text-align:right;
+    margin-right:50px;
+}
+
+.defaultPanel{
+    border:2px solid black;
+    border-top: 0;
+}
+
+.deleteHeader, 
+.listHeader{
+    float:right;
+    margin-left:30px; 
+    cursor:pointer;
+    background-color:white;
+    padding-right:10px;
+    border-radius:25px;
+    font-weight:normal;
+    font-weight:bolder;
+    padding-left:10px;
+    border: 2px solid black;
+}
+
+.deleteHeader:hover{
+    background-color:dodgerblue;
+}
+.listHeader:hover{
+    background-color:dodgerblue;
+}
+.titleHeader{
+    background-color:white;
+    padding-right:10px;
+    border-radius:25px;
+    font-weight:normal;
+    font-weight:bolder;
+    padding-left:10px;
+    border: 2px solid black;
+    cursor:pointer;
+}
+
+.titleHeader:hover{
+    background-color:dodgerblue;
+
+}
+
+.detailPanelCss{
+    background-color:#8DA5ED;
+    border:2px;
+    border-style:solid;
+    word-break :keep-all;   
+}
+
+.errorLabel{
+    color: red;
+    padding-right:10px;
+    border-radius:25px;
+    font-weight:normal;
+    font-weight:bolder;
+    padding-left:10px;
+    border: 2px solid black;
+    cursor:pointer;
+    float:right;
+}
+
+.errorLabel:hover{
+    background-color: red;
+    color:white;
+    padding-right:10px;
+    border-radius:25px;
+    font-weight:normal;
+    font-weight:bolder;
+    padding-left:10px;
+    border: 2px solid black;
+    cursor:pointer;
+    float:right;
+
+}
+
+.goalTitle{
+    display:inline-block;
+    font-size:xx-large;
+    font-weight:bold;
+}
+
+#goalTitleDiv{
+    font-size:xx-large;
+    background:white;
+    color:black;
+    width:80%;
+    display:inline-block;
+    padding:30px;
+    margin:30px;
+    margin-bottom:0px;
+}
+
+.groupOutline{
+    background-color:#8DA5ED;
+    margin-top:2%;
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+}
+
+input[type="checkbox"] {
+    background: transparent;
+    border: inherit;
+    width: auto;
+}
+
+#stopActButton,
+.actButtonClass {
+    background-color: white;
+    border: 2px solid black;
+    border-radius:10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-right: 8px;
+    padding: 7px;
+    width: auto;
+}
+
+#stopActButton:hover,
+.actButtonClass:hover {
+    background-color: #19AD09;
+    border: 2px solid black;
+}
+
+input[type='file']{
+    display:inline-block;
+}
+
+input, textarea {
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    color: #333;
+    font-size: 1.2em;
+    margin: 5px 0 6px 0;
+    padding: 5px;
+    width: 150px;
+}
+
+.iPanel
+{
+    background-color:#8DA5ED;
+    border:2px solid black;
+    border-top: 0;
+    visibility:hidden;
+}
+
+.iniHidden{
+    visibility:hidden;
+}
+
+.name{
+    font-size:large;
+    margin-right:10%;
+}
+
+.mainPicture{
+    float:left; 
+}
+
+#mainImg{
+    cursor:pointer;
+}
+
+.menu{
+    background-color: white;
+    border: 1px solid rgb(230, 230, 230); 
+    float: left;
+    margin-bottom: 1%; 
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 7%;
+}
+
+.menuItem{
+    font-size:xx-large;
+    font-weight:bolder;
+    border:2px solid black;
+    padding: 0 10px 0 10px;
+    border-radius:10px;
+    background-color:white;
+}
+
+.menuItem:hover{
+    background-color:green;
+    cursor:pointer !important;
+}
+
+.picButtons{
+    margin-top:30px;
+}
+
+.picFile{
+    display:inline-block;
+}
+
+#picSelect{
+    display:inline-flex;
+}
+
+
+textarea {
+    font-family: inherit;
+    width: 500px;
+}
+
+.textboxes{
+    width:80%;
+    font-size:large;
+}
+
+.timeDropDownClass{
+    background-color: #d3dce0;
+    border: 1px solid #787878;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-right: 8px;
+    padding: 7px;
+    width: 100px;
+}
+  
+.times{
+    margin-left:50px;
+    text-align:center;
+    margin-right:10px;
+    font-size:x-large;
+}
+
+.timeLabel{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-right: 8px;
+    padding: 7px;
+    width: 75px;
+}
+
+.timeSingle{
+    text-align:center;
+    font-size:x-large;
+}
+
+.ui-tooltip
+{
+    padding: 1px;
+    font-size: small;
+    border-width:1px;
+}
+
+.shareSettingsDropdown{
+    width:25%;
+    height:15%;
+    cursor:pointer !important;
+}
+
+.shareSettingsDropdown:hover{
+    background-color:green;
+}
+
+.file-upload {
+    background: white;
+    border: 2px solid black;
+    border-radius:10px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.2em;
+    height:50px;
+    margin: 15px 0 6px 20px;
+    overflow: hidden;
+    padding: 5px;
+    width: 150px;
+}
+
+.file-upload:hover{
+    background-color:green;
+}
+
+.file-upload input {
+    ;
+    top: 0;
+    left: 0;
+    margin: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#fileUploadTitle {
+    position:fixed;
+    padding: 5px;
+    display: inline-block;
+    font-weight: normal;
+}
+
+.fileList {
+    border: 2px solid black;
+}
+
+.fileNames{
+    display:block;
+}

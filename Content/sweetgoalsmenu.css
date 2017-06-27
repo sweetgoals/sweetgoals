@@ -1,0 +1,50 @@
+.bold{
+    font-weight:bold;
+}
+
+.listUL{
+	margin-bottom:10px;
+}
+
+.mainItem{
+	float:left;
+}
+
+.menuBar{
+	margin:0px;
+	margin-right:auto;
+	margin-left:auto;
+	padding:10px;
+	background-color:#8DA5ED;
+	width:800px;
+}
+
+.menuBar li{
+    list-style-type:none;
+	width:125px;
+}
+
+.menuBar li ul{
+	visibility: hidden;
+    background-color: royalblue;
+}
+
+.menuBar li:hover ul{
+	visibility:visible;
+}
+
+.subMenu{
+	border: 2px solid black;
+	position:absolute;
+}
+
+.subMenu li{
+	margin-bottom:10px;
+}
+
+.topSection{
+	border-width: 2px; 
+	border-color: black; 
+	border-bottom-style: solid;
+	background-color:#8DA5ED;
+}

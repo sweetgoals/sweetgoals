@@ -1,0 +1,75 @@
+﻿
+.pageOutline
+{
+    margin-top:2%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:2%;
+    width:80%;
+    background-color:#8DA5ED;   
+}
+
+.starImg{
+    position:relative;
+    top:12px;
+    left:40px;
+    height:50px;
+    width:50px;
+}
+
+.achMainDiv{
+    border-style: solid; 
+    margin: 5px;
+    width:95%;
+    word-break: keep-all;
+    background-color:white;
+    display:inline-block;
+}
+
+.achMainCompleteDiv
+{
+    font-weight:bold;
+    border-style: solid; 
+    margin: 5px;
+    width:95%;
+    word-break: keep-all;
+    display:inline-block;
+}
+
+.achMainCompleteDiv:hover
+{
+    background-color:#6699FF;
+}
+
+.achTitleCompleteDiv
+{
+    border-bottom-width: 2px;
+}
+
+
+.achNumCompleteSpan
+{
+    float:left; 
+    margin-left:10px;
+}
+    
+.achTitleCompleteSpan
+{
+    text-align:center; 
+}
+
+.achDateCompleteSpan
+{
+    float:right;
+    margin-left:50px;
+    margin-right:10px;
+}
+
+.achDescCompleteDiv
+{
+    text-align: left; 
+    word-break: keep-all;
+    margin:10px;
+}
+
+

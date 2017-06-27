@@ -1,0 +1,108 @@
+﻿input, textarea {
+    border: 1px solid #e2e2e2;
+    background: #fff;
+    color: #333;
+    font-size: 1.2em;
+    margin: 5px 0 6px 0;
+    padding: 5px;
+    width: 300px;
+}
+
+textarea {
+    font-family: inherit;
+    width: 500px;
+}
+    
+input:focus, textarea:focus {
+    border: 1px solid #7ac0da;
+}
+
+input[type="checkbox"] {
+    background: transparent;
+    border: inherit;
+    width: auto;
+}
+        
+input[type="submit"],
+input[type="button"],
+button {
+    background-color: #d3dce0;
+    border: 1px solid #787878;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 7px;
+    margin-right: 8px;
+    width: auto;
+}
+
+td input[type="submit"],
+td input[type="button"],
+td button {
+    font-size: 1em;
+    padding: 4px;
+    margin-right: 4px;
+}
+
+.ui-sortable{
+    font-size: x-large; 
+    display: inline-block; 
+    min-height:50px;
+    width:95%;
+    list-style-type:none;
+    border-width:2px;
+    border-color:black;
+    border-style:solid;
+}
+.reasonDiv{
+    margin-top:2%;
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+    background-color:#8DA5ED;
+    border-width:2px;
+    border-color:black;
+    border-style:solid;
+
+}
+.reasonClass{
+    position:relative;
+    width:95%;
+    margin:10px;
+    text-align:left;
+}
+
+.Anonymous{
+    position:relative;
+    width:95%;
+    margin:10px;
+    text-align:left;
+}
+
+.reasonClass:hover{
+    background-color:#6699FF;
+    border-width:2px;
+    border-color:black;
+    border-style:solid;
+    text-align:left;
+    cursor:move;
+}
+
+.dSpan{
+    display:inline-block;
+}
+
+.labelClass{
+    display:inline-block;
+}
+.closeImg:hover{
+    cursor:pointer;
+}
+
+.tour-backdrop {
+    background-color:grey;
+}
+
+.tour-step-backdrop {
+    background-color:white;
+}

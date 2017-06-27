@@ -1,0 +1,60 @@
+﻿div#topSection, 
+    #mobileSection,
+    #desktopSection {
+    background-color:#8DA5ED;
+}
+#header {
+    padding:10px;
+    background:#fdd;
+}
+
+
+input[type="submit"],
+input[type="button"],
+button {
+    background-color: #d3dce0;
+    border: 1px solid #787878;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 7px;
+    margin-right: 8px;
+    width: auto;
+}
+
+input, textarea {
+    border: 1px solid #e2e2e2;
+    background: #fff;
+    color: #333;
+    font-size: 1.2em;
+    margin: 5px 0 6px 0;
+    padding: 5px;
+    width: 300px;
+}
+
+.groupOutline
+{
+    margin-top:2%;
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+    background-color:#8DA5ED;
+    text-align:center;
+}
+
+.textboxes
+{
+    width:80%;
+    font-size:large;
+}
+
+.donate{
+    float:right; 
+    display:block;
+    padding-top:5%;
+    padding-right:5%;
+}
+
+.goalDetailDivs{
+    display:inline-block;
+}

@@ -1,0 +1,121 @@
+﻿
+div#topSection, 
+    #mobileSection,
+    #desktopSection {
+    background-color:#8DA5ED;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    padding:10px;
+    background:#fdd;
+}
+
+a:link, a:visited,a:active, a:hover {
+	color: #333;
+}
+
+a:hover {
+	background-color: #c7d1d6;
+}
+
+h1, h2, h3,h4, h5, h6 {
+    color: #000;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+h5 a:link, h5 a:visited, h5 a:active {
+	padding: 0;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    margin:0;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    padding:10px;
+    background:#fdd;
+}
+
+a:link, a:visited,a:active, a:hover{
+	color: #333;
+}
+
+a:hover {
+	background-color: #c7d1d6;
+}
+
+div#topSection {
+    background-color:#8DA5ED;
+}
+
+#tutorial{
+    cursor:pointer;
+}
+
+.bold{
+    font-weight:bold;
+}
+
+
+.ajaxCallLock { 
+    display: block; 
+    visibility: visible; 
+    position: absolute; 
+    z-index: 500; 
+    /*top: 0px;*/ 
+    left: 0px; 
+    width: 105%; 
+    height: 105%; 
+    background-color: #ccc; 
+    text-align: center; 
+    padding-top: 20%; 
+    filter: alpha(opacity=75); 
+    opacity: 0.75; 
+} 
+
+.donate{
+    float:right; 
+    display:block;
+    padding-top:0.7%;
+    padding-right:1%;
+}

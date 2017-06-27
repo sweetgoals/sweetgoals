@@ -1,0 +1,51 @@
+﻿.contentDiv{
+    width:80%; 
+    background-color:#8DA5ED; 
+    margin-top:2%;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:large;
+}
+
+caption{
+    background-color:#8DA5ED;
+}
+
+.emailBox{
+    width: 300px; 
+    height: 40px; 
+    font-size: large;
+}
+
+.passChange{
+    margin: 1%; 
+    display: inline-block;
+}
+input[type="submit"],
+input[type="button"],
+button {
+    background-color: #d3dce0;
+    border: 1px solid #787878;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 7px;
+    margin-bottom:3%;
+    width: auto;
+}
+
+td input[type="submit"],
+td input[type="button"],
+td button {
+    font-size: 1em;
+    padding: 4px;
+    margin-right: 4px;
+}
+
+.tour-backdrop {
+    background-color:grey;
+}
+
+.tour-step-backdrop {
+    background-color:white;
+}

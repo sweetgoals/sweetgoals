@@ -1,0 +1,57 @@
+/* tutorial code */
+
+.steps {
+	list-style-type:none;
+}
+.topOne {
+	background-color:#6699FF;
+}
+
+.shortVersion{
+	border: 2px black solid;
+	border-bottom: none;
+	width: 755px;
+	display: inline-block;
+	margin: 25px;
+}
+
+.step{
+	border: 2px black solid;
+	border-right:none;
+	background-color: white;
+	padding: 33px;
+}
+
+.steps{
+	display: inline-flex
+}
+
+.tImg{
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	display: block;
+	height:150px;
+}
+
+.tComment{
+	display:block;
+	text-align:center;
+	font-size: larger;
+}
+
+.tTitle{
+	background-color: #C2D1FF;
+	float: left;
+	width: 100%;
+	font-size: xx-large;
+	text-align: center;
+}
+
+.removeRightBorder {
+	border-right:none;
+}
+
+.removeLeftBorder {
+	border-left:none;
+}

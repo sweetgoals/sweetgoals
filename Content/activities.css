@@ -1,0 +1,161 @@
+﻿body{
+    background-color:#f5f5f5;
+    overflow-y: scroll;
+}
+
+.num
+{
+    /*background: #C0C0C0;*/
+    width:50px;
+    display: table-cell;
+    text-align:center;
+    vertical-align: middle;
+}
+
+.date
+{
+    /*background: #00FF00;*/
+    width:70px;
+    display: table-cell;
+    text-align:center;
+    vertical-align: middle; 
+}
+.title
+{
+    width:125px;
+    display: table-cell;
+    text-align:center;
+    vertical-align: middle;
+}
+
+.desc
+{
+    display: table-cell;
+    text-align:left;
+    vertical-align: middle;
+}
+
+.detailPanel{
+	width:95%;
+	display:inline-block;
+}
+
+#footer{
+    height:150px;
+}
+
+.item
+{
+	background:white;
+    border-style: solid; 
+    margin: 5px;
+    word-break: keep-all;
+}
+.item:hover
+{
+    background-color:lightgreen;
+    
+}
+
+.itemStart
+{
+    border-style: solid; 
+    margin: 5px;
+    border-color:green;       
+}
+.itemStart:hover
+{
+    background-color:lawngreen;
+}
+
+.itemTitleSection
+{
+    border-bottom-width: 2px;
+    
+}
+
+.itemTitleActNum
+{
+    float:left; 
+    margin-left:10px;
+	text-decoration:none;
+}
+    
+.itemTitleActTitle
+{
+    text-align:center; 
+	text-decoration:none;
+}
+
+.itemTitleActTitle:hover{
+    text-decoration:none;
+}
+.itemTitleActTime
+{
+    float:right;
+    margin-left:50px;
+    margin-right:10px;
+}
+        
+.itemTitleActDate
+{
+    float:right;
+    margin-left:50px;
+    margin-right:10px;
+}
+
+.itemDescSection
+{
+    text-align: left; 
+    word-break: keep-all;
+    margin:10px;
+}
+
+ul#sortable
+{
+	list-style-type:none;
+	display:none;
+}
+    
+.liSort {
+    border-style:solid;
+    border-width:1px;
+}
+
+.lockScreen{
+    display:none; 
+    height:100%; 
+    position:fixed; 
+    width:100%
+}
+
+.tour-backdrop {
+    background-color:grey;
+}
+
+.tour-step-backdrop {
+    background-color:white;
+}
+
+.goalDetailSpan{
+	display:block;
+	margin:10px;
+}
+
+.goalDetailSection{
+	width:95%;
+	background:white;
+	border: 2px solid black;
+	display:inline-block;
+	margin:10px;
+	border-radius:20px;
+}
+
+.goalTitleSpan{
+	font-size:50px;
+	font-weight:bold;
+}
+
+.goalDescriptionSpan{
+	font-size:20px;
+}

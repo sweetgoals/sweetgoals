@@ -1,0 +1,47 @@
+﻿
+body{
+    background-color:#f5f5f5;
+    overflow-y: scroll;
+}
+
+.completeActs{
+    margin-left:125px;
+}
+
+.goalBox{
+    text-decoration:none;
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    text-align:center;
+    border: 2px solid black;
+    border-radius:20px;
+    display:inline-table;
+    margin:30px;
+ }
+
+.goalBox:hover{
+    background-color:lightgreen;
+    text-decoration:none;
+}
+
+.goalDivHoldSpans{
+    color: #000;
+    display: block;
+    padding: 2px;
+    text-decoration:none;
+}
+
+.goalName{
+    font-size:x-large;
+    margin:30px;
+}
+.lastDate{
+    margin-right:125px;
+}
+
+
+.main{
+    width:90%;
+    display:inline-block;
+}

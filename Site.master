@@ -1,0 +1,89 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeFile="Site.master.vb" Inherits="SiteMaster" %>
+
+<%@ Register Src="~/CustomControls/sweetgoalsmenu.ascx" TagPrefix="uc1" TagName="sweetgoalsmenu" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <title>Sweet Goals</title>
+    <meta name="description" content="Sweet Goals allows you to track, document, improve and reflect on the goals in your 
+                                        life so that you can make a phenomenal life!" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Language" content="EN" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="keywords" content="goals, tracking progress, completing objectives, goal tracking, 
+                                    writing activities, sweet goals, completing goals, " />
+
+    <meta name="abstract" content="Best place to track and document your goals in life on the web." />
+    <meta name="author" content="sweetgoals.com" />
+    <meta name="distribution" content="Global" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="robots" content="follow,index" />
+
+<%--    <meta name="og:Title" content="Sweet Goals" />
+    <meta name="og:type" content="Website" />
+    <meta name="og:url" content="www.sweetgoals.com" />
+    <meta name="og:image" content="http://www.sweetgoals.com/images/logo.png" />
+
+    <meta name="twitter:card" content="Summary" />
+    <meta name="twitter:site" content="@SweetGoals" />
+    <meta name="twitter:title" content="Sweet Goals" />
+    <meta name="twitter:description" content="Make the most of life one goal at a time." />
+    <meta name="twitter:url" content="www.sweetgoals.com" />
+    <meta name="twitter:image:src" content="http://www.sweetgoals.com/images/logo.png" />--%>
+
+    <link rel="shortcut icon" href="Images/sglogo.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="Content/ThirdParty/bootstrap-tour-standalone.css" />
+    <link rel="stylesheet" href="Content/ThirdParty/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="Content/master.css" type="text/css" />
+    <link rel="stylesheet" href="Content/sweetgoalsmenu.css" type="text/css" />
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="../Scripts/ThirdParty/bootstrap-tour-standalone.js"></script>
+    <script src="../Scripts/TourObjects.js"></script>
+
+    <script type="text/javascript">
+        function showAchievementPopup(message) {
+            $(function () {
+                $("#achPopup").html(message);
+                $("#achPopup").dialog({
+                    title: "New Achievement!",
+                    modal: true,
+                    buttons: {
+                        Close: function () {
+                            $(this).dialog('close');
+                        }
+                    }
+                });
+            });
+        };
+
+<%--        $(document).ready(function () {
+            var madeAchs = '<%=Session("achs")%>';
+
+            if (madeAchs.length > 5) {
+                showAchievementPopup(madeAchs);
+                <% Session("achs") = ""%>
+            };
+        });--%>
+    </script>
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+
+</head>
+<body>
+    <form runat="server">
+        <uc1:sweetgoalsmenu runat="server" ID="sweetgoalsmenu" />
+        <div id="lockScreen" class="ajaxCallLock" style="display: none;">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/ajaxload.gif" />
+        </div>
+        <div style="text-align: center; right: auto; left: auto; width: auto;">
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        </div>
+
+        <%--        <div id="achPopup" style="display: inline"/>--%>
+    </form>
+</body>
+</html>
