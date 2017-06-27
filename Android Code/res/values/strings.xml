@@ -1,0 +1,39 @@
+<resources>
+
+    <string name="app_name">sweetgoals</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string-array name="GoalCatagories">
+        <item>Fitness</item>
+        <item>Education</item>
+        <item>Hobby</item>
+        <item>Family</item>
+        <item>Professional</item>
+        <item>Monetary</item>
+    </string-array>
+     
+    <string-array name="GoalRange">
+        <item>Days</item>
+        <item>Months</item>
+        <item>Years</item>
+    </string-array>
+
+    <string-array name="srLengthUnit">       
+        <item>Hours</item>
+        <item>Minutes</item>
+    </string-array>
+
+    <string-array name="DayPick">
+       <!--   <item>Pick Days</item>-->
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+     </string-array> 
+    
+</resources>

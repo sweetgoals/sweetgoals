@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+<!-- goal catagory     -->
+
+   <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="Goal Catagory"
+       android:textColor="#000000"
+       android:textSize="32dp" />
+
+   <Spinner
+       android:id="@+id/goalCat"        
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:entries="@array/GoalCatagories" />
+
+<!-- goal    -->    
+
+   <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="Goal Summary"
+       android:textColor="#000000"
+       android:textSize="32dp" />
+
+    <EditText
+        android:id="@+id/goalSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"       
+        android:singleLine="false" >
+        <requestFocus />
+    </EditText>
+
+   
+<!--     goal reasons -->
+
+   <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="Goal Reasons"
+       android:textColor="#000000"
+       android:textSize="32dp" />
+
+    <EditText
+        android:id="@+id/reason1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"       
+        android:inputType="textMultiLine"
+        android:singleLine="false" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/reason2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:singleLine="false" >
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/reason3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:singleLine="false" >
+        <requestFocus />
+    </EditText>
+    
+    
+<!--    goal timeframe -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Timeframe"
+        android:textColor="#000000"
+        android:textSize="32dp" />
+
+   <EditText
+       android:id="@+id/timeframe"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="number" >
+       <requestFocus />
+   </EditText>
+		
+   <Spinner
+       android:id="@+id/goalRange"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:entries="@array/GoalRange" />
+
+<!--     session length -->
+  <Button android:layout_height="wrap_content"
+    android:layout_width="fill_parent" 
+    android:text="@array/DayPick"
+    android:id="@+id/select_colours" 
+    android:padding="5dip" />
+  
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Session Length"
+        android:textColor="#000000"
+        android:textSize="32dp" />
+
+    <EditText
+        android:id="@+id/lengthTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" >
+        <requestFocus />
+    </EditText>
+
+   <Spinner
+       android:id="@+id/lengthUnit"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:entries="@array/srLengthUnit" />
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:layout_centerHorizontal="true">   
+    
+    <Button
+        android:id="@+id/cencelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/enterButton"
+        android:gravity="center"
+        android:text="Cancel"
+        android:textSize="25dp"
+        android:layout_margin="10dp"/>
+    
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:layout_toLeftOf="@+id/cancelButton"
+        android:layout_margin="10dp"              
+        android:textSize="25dp" />
+</RelativeLayout>
+</LinearLayout>
+</ScrollView>    
